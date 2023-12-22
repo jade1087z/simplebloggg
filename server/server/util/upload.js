@@ -5,7 +5,7 @@ const path = require("path");
 
 const endpoint = new AWS.Endpoint('https://kr.object.ncloudstorage.com');
 const region = 'kr-standard';
-const config = require("../server/config/key.js");
+const config = require("../config/key.js");
 
 const S3 = new AWS.S3({
     endpoint: endpoint,

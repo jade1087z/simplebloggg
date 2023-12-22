@@ -17,6 +17,8 @@ app.use("/api/post", require("./server/router/post.js"));
 app.use("/api/user", require("./server/router/user.js"));
 app.use("/api/reple", require("./server/router/reple.js"));
 
+
+
 app.listen(port, () => {
     mongoose
         .connect(config.mongoURI)
@@ -32,6 +34,7 @@ app.listen(port, () => {
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "./client/build/index.html"));
 })
+
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
