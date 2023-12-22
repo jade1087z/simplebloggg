@@ -1,0 +1,104 @@
+body {
+    background-color: var(--white);
+    color: var(--color);
+}
+
+main {
+    min-height: 80vh;
+}
+
+// 섹션 공통 요소
+section {
+    padding: 40px;
+
+    @media (max-width: 800px) {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+
+        em {
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 100%;
+                height: 50%;
+                background-color: var(--red100);
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+// 섹션 로딩 소스
+.isLoading {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.isLoaded {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.reple {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+}
+.reple-info {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.modal {
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.isLoadED {
+    opacity: 1;
+    transition: all 0.5s;
+}
+.mypage {
+    text-align: center;
+    padding: 20px;
+}
+.mypage label {
+
+}
+
+.search {
+    padding: 20px;
+}
+
+.search input {
+    padding: 5px 20px;
+    border: 1px solid black;
+}
+.search button {
+    border: 1px solid black;
+    border-left: none;
+    padding: 5px 20px;
+    background-color: #fff;
+}
+
+.list__btn {
+    padding-left: 20px;
+}
+.list__btn button {
+
+    border: 1px solid black;
+    background-color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
