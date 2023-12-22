@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 
-const { User } = require("../server/model/User.js");
-const { Counter } = require("../server/model/Counter.js");
+const { User } = require("../model/User.js");
+const { Counter } = require("../model/Counter.js");
 
 const setUpload = require("../util/upload.js");
 router.post("/join", (req, res) => {

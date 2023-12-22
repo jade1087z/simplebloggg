@@ -2,10 +2,10 @@ const express = require("express");
 const router = express.Router();
 
 // 스키마 만들기
-const { Post } = require("../server/model/Post.js");
-const { Counter } = require("../server/model/Counter.js");
-const {User} = require("../server/model/User.js");
-const {Reple} = require("../server/model/Reple.js")
+const { Post } = require("../model/Post.js");
+const { Counter } = require("../model/Counter.js");
+const {User} = require("../model/User.js");
+const {Reple} = require("../model/Reple.js")
 
 router.post("/submit", async (req, res) => {
     let temp = {

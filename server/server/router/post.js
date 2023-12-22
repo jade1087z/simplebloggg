@@ -2,12 +2,12 @@ const express = require("express");
 const router = express.Router();
 
 // 스키마 만들기
-const { Post } = require("../server/model/Post.js");
-const { Counter } = require("../server/model/Counter.js");
-const {User} = require("../server/model/User.js");
+const { Post } = require("../model/Post.js");
+const { Counter } = require("../model/Counter.js");
+const {User} = require("../model/User.js");
 
-// 이미지 업로드
 const setUpload = require("../util/upload.js");
+// 이미지 업로드
 
 // 글 쓰기
 // router.post("/write", (req, res) => {
